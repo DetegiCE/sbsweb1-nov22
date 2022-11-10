@@ -1,0 +1,98 @@
+Visual Studio Code 다운로드
+-> 거의 대부분의 코드를 작성할 수 있는 코딩 툴 (IDE)
+Integrated Development Environment
+통합 개발 환경
+- HTML/CSS/JavaScript C언어, Python 등등의 여러 프로그래밍 언어도 개발 가능하다
+
+Git -> 버전 관리
+-> 이 코드가 언제 수정(삭제, 추가 포함)되었고, 왜 수정되었고 등등을 관리해주는 프로그램
+
+github.com -> Sign up (회원가입)
+
+git-scm.com -> 들어가서 다운로드
+
+VS Code의 Extensions 메뉴
+- GitHub Pull Requests and Issues
+- GitHub Codespaces
+2개 설치 후에 재시작
+
+VS Code에서 F1 누르고 git clone
+-> git 주소 복사
+-> 폴더 선택
+-> Open
+연동 완료
+
+[라이브 서버 방식]
+Extensions -> Live Server 설치
+파일 연 상태에서 우클릭 -> Open with Live Server 클릭
+
+수정 후 저장만 하면 바로 반영
+
+[경로 복사 방식]
+파일 이름 우클릭 -> Copy Path -> 크롬에 복사 붙여넣기
+
+수정 후 저장 -> 새로고침해야 반영
+
+U : Untracked
+M : Modified
+D : Deleted
+A : Add
+
+
+파일 관리 방식
+1. 컴퓨터에서 파일이 수정/추가/삭제
+2. 스테이징 상태 (준비 완료)
+3. Message 부분에 이번 수정에 어떤 것을 했다라고 간략하게 작성
+4. Commit 클릭 -> 깃헙 서버로 보내졌다
+5. Sync Change 클릭 -> 깃헙 (Push)
+
+git config 오류 발생할 경우
+로그인 창이 뜨면 로그인 진행
+로그인 창이 안 뜰 경우
+상단의 Terminal 메뉴 -> New Terminal
+git config --global user.name "깃허브 닉네임"
+git config --global user.email "깃허브 이메일"
+
+HTML 텍스트 태그
+<hn> 태그 -> 제목(heading)을 다는 태그
+<h1>텍스트</h1> -> 가장 큰 제목
+<h2>텍스트</h2>
+...
+<h6>텍스트</h6> -> 가장 작은 제목
+
+<p> 태그 -> 문단, 단락(paragraph)을 만드는 태그
+= 엔터
+
+<br> 태그 -> 줄바꿈(break)을 하는 태그
+-> 1회성 태그 : 따로 닫는 구문이 없음
+= 쉬프트+엔터
+
+<blockquote> 태그 -> 인용문(quote)을 작성하는 태그
+
+<strong>, <b> 태그 -> 굵게(bold) 표시할 때 사용
+bald = 대머리, bold = 굵게
+일반적인 웹사이트에서는 구분X
+시각장애인을 위한 사이트읽어주는 툴 -> strong 태그가 오면 좀 더 강한 발음으로 읽어줌 (다양성을 태그)
+
+<em>, <i> 태그 -> 기울임꼴(emphasis, italic)로 표시할 때 사용
+
+<abbr> 태그 -> 줄임말(abbreviation) 태그
+<abbr title="늘림말">줄임말</abbr>
+
+<cite> 태그 -> 참고문헌 (기울임꼴로 표시가 됨)
+
+<code> 태그 -> HTML 문서에서 코드를 표현하기 위해서 사용되는 태그
+
+<small> 태그 -> 작은 글씨를 위한 태그
+
+<sub> 태그 -> 아래 첨자를 표현하는 태그
+
+<sup> 태그 -> 위 첨자를 표현하는 태그
+
+<s> 태그 -> 취소선(가운뎃선)을 그어주는 태그
+
+<u> 태그 -> 밑줄을 그어주는 태그
+
+
+
+
