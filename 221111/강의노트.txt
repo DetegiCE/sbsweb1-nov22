@@ -1,0 +1,68 @@
+git config --global user.name "깃허브 닉네임"
+git config --global user.email "깃허브 이메일"
+
+git-scm.com -> 들어가서 다운로드
+
+VS Code의 Extensions 메뉴
+- GitHub Pull Requests and Issues
+- GitHub Codespaces
+2개 설치 후에 재시작
+
+목록형 태그 -> 3가지
+(ul, ol, dl)
+오늘 살 물건
+- 수박
+- 딸기
+- 참외
+
+ul: unordered list (순서가 없는 리스트)
+ol: ordered list (순서가 있는 리스트)
+dl: description list (설명 리스트)
+li: list item (목록형의 아이템들)
+
+ol 태그에서 앞의 숫자 대신에 영어나 로마숫자를 붙일 수 있음
+-> type 속성
+<ol type="A", "a", "I", "i">
+
+ol 태그는 시작하는 숫자 번호를 바꿀 수 있음
+-> start 속성
+<ol start="3">
+
+-> type과 start 동시에 사용 가능
+
+dl 태그 -> description list (설명 리스트)
+key 값과 value 값 형태
+key -> dt 태그
+value -> dd 태그
+
+목록형 -> 네비게이션 바에 사용
+
+
+표 (table 태그) -> 행과 열(column)
+table (필수)
+- caption (표의 제목)
+- colgroup (열의 그룹)
+ - cols (열 1개)
+- thead (표의 머리)
+- tbody (표의 몸통)
+- tfoot (표의 끝)
+ - tr (행 1개)
+  - th (행 안에 있는 셀(=칸) 1개)
+     (칸 들 중에서도 대표적인 칸)
+  - td
+
+table 태그의 내부에 border="1" 추가하면 테두리가 추가
+
+span 속성을 이용해서 두 칸을 합칠 수 있음
+colspan -> 가로로 합치기
+rowspan -> 세로로 합치기
+
+표 태그 이용해서 11월 달력을 만들어봅시다
+- 앞의 10월과 뒤의 12월 부분은 셀 합치기로 합치기
+
+colgroup 태그를 이용해서 한 개의 열에 공통적인 스타일을 적용할 수 있다
+-> col 태그를 이용해서 어떤 스타일을 적용할 지 결정
+background-color -> 배경색을 주는 스타일
+width -> 너비를 주는 스타일
+
+color -> 글씨 색 (colgroup으로 설정X)
