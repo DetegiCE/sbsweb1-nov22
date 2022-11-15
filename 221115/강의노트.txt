@@ -1,0 +1,130 @@
+입력 폼 <form>태그
+
+method 속성: "get", "post" (선택사항)
+- get : 서버로 데이터를 암호화 하지 않고 전송
+- post: "   암호화 한 상태로 전송 (겉에 드러나지 않는 방식으로 전송)
+action 속성: 폼에 입력한 데이터를 보낼 서버의 주소 (선택사항)
+
+form -> 전체 폼을 감싸는 태그
+- fieldset -> 부분 폼
+  - legend -> fieldset의 제목
+  - label, input 등등 -> 폼의 각각의 요소
+
+label -> 레이블을 붙이는 태그
+
+input -> 사용자의 입력을 받는 태그
+type 속성 -> 이 input 태그가 어떤 종류의 데이터를 입력받을지 
+- text: 텍스트를 입력받는다
+- password: 비밀번호를 입력받는다 (글씨들이 마스킹 된 채로 보이게 됨)
+
+size 속성 -> 크기 지정 (input 창의 너비 지정)
+value 속성 -> 기본 값 지정 (input 창에 기본으로 작성이 되어있는 값)
+maxlength 속성 -> max(최대) length(길이) : 이 입력창에 입력할 수 있는 최대 텍스트의 길이
+
+
+기본적으로 검색창같은 경우 -> text
+type="search" -> 검색을 위한 타입
+- input 창의 오른쪽에 x 버튼이 생김
+- 크롬 탭에서 자동으로 검색 인식
+
+type="url" -> 링크를 위한 타입
+type="email" -> 이메일을 위한 타입
+type="tel" -> 전화번호를 위한 타입
+type="address" -> 주소를 위한 타입
+-> 이 타입들은 PC에서는 일반 text와 별 차이를 보이지 않지만, 모바일에 차이점을 보임
+url 타입은 키보드에 추가적으로 :, /
+tel 타입은 키보드가 숫자 키보드로 설정
+email 타입은 키보드에 @, .(.com)이 추가됨
+-> UX를 위한 타입
+
+label에 for 속성 = input에 id 속성
+
+
+체크박스와 라디오 버튼
+체크박스: type="checkbox"
+라디오버튼: type="radio"
+라디오 버튼에는 하나의 그룹으로 묶어주는 name 속성
+-> name 속성이 같은 것들끼리 한 그룹 (한 그룹에서는 하나만 선택)
+
+value 속성 -> 서버로 전송할 값
+checked 속성 -> 기본적으로 체크를 해 놓을거냐
+(단독 속성 -> checked 만 써도 됨)
+
+
+폼 전송 버튼 / 취소 버튼
+전송: type="submit" (제출)
+-> 서버로 전송
+-> get 방식은 주소 뒤에 ?name=value&name=value 붙게 됨
+-> post 방식은 붙지는 않지만 반드시 서버가 필요한 방식
+
+취소: type="reset" (초기화)
+-> 모두 초기화를 시켜주는대신에, html에서 설정했던 value들은 그대로 유지
+
+-> value 속성을 이용해서 제출/초기화 버튼에 있는 글씨를 바꿀 수 있음
+
+<div> -> division의 줄임말
+구획을 나누는 태그
+
+
+숫자 타입
+type="number"
+숫자를 입력할 수 있는 입력 창
+(방향키로 숫자 +1, -1 가능)
+
+type="range" (범위)
+숫자를 이동할 수 있는 슬라이드 바
+(-100 ~ 100 사이의 값 -> 초기 값은 0)
+
+min -> minimum의 줄임말 (최솟값 지정)
+max -> maximum의 줄임말 (최댓값 지정)
+value -> 초기값 지정
+step -> 한 번 늘릴 때마다 몇 씩 늘어날지 결정
+
+
+날짜 지정 
+type="date", "month", "week"
+-> 직접 숫자를 입력해서 날짜를 바꿀 수 있고,
+오른쪽에 있는 달력버튼을 클릭해서 날짜를 선택할 수 있음
+
+min, max, value 전부 지정 가능
+date: min="2022-11-01"
+month: min="2022-11"
+week: min="2022-W37"
+
+시간 지정
+type="time", "datetime-local"
+time: min="12:25"
+datetime-local: min="2022-11-15 12:25"
+
+버튼 
+input type="submit", "reset"
+"button", "image"
+"button" -> 아무런 기능이 없는 그냥 버튼
+-> 자바스크립트랑 함께 사용
+onclick 속성 -> 얘를 클릭했을 때 실행되는 자바스크립트 코드
+
+"image" -> 제출 기능이 있는 이미지 버튼
+
+파일 첨부 버튼
+input type="file"
+
+히든 타입
+input type="hidden"
+-> 서버로 값을 전송할 건데 이 값이 사용자에게는 보이지 않게 하기 위해서 hidden 사용
+
+
+기본 input 타입은 1줄 밖에 입력이 안됨
+여러 줄 입력 받기 -> textarea (텍스트 영역)
+-> 댓글을 쓸 때 사용
+
+textarea 태그는 input 태그와 다르게 닫는 태그가 있음 (단독 태그X)
+오른쪽 아래에 마우스를 대서 직접 크기 조절이 가능
+-> 크기조절을 속성을 이용해서 직접 크기를 지정해줄 수 있음
+rows -> 세로 길이를 줄 단위로 설정, 지정한 줄 크기가 넘어가면 자동으로 스크롤이 생김
+cols -> 가로 길이를 문자 단위 지정
+
+드롭다운: 목록에서 선택
+select-option, datalist-option
+
+option 도 반드시 value 값이 필요
+-> 서버로 값을 전송할 때 필요하기 때문
