@@ -54,6 +54,7 @@ input 태그에서 많이 사용되는 속성
 - 필수 (required) -> 단독 속성
   -> 이 칸은 반드시 작성해야지만 폼을 제출할 수 있ㄷ자
   -> oninvalid 를 이용해서 나오는 텍스트 메시지를 수정할 수 있음 (자바스크립트)
+oninvalid="this.setCustomValidity('텍스트')"
 
 <input type="color">
 색상을 선택하는 input (RGB, HSL, 헥스코드 가능)
