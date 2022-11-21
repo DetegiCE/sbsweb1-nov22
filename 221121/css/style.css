@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&display=swap');
+
+body > p:nth-child(1) {
+    font-family: 굴림123, 돋움, "맑은 고딕";
+    font-size: xx-large;
+}
+
+@font-face {
+    font-family: "abc";
+    src: url('../fonts/Hahmlet-Medium.ttf') format('truetype');
+}
