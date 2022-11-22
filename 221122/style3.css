@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    font-family: Jua;
+}
+
+.trend-list {
+    list-style-type: none;
+}
+
+.trend-title {
+    color: brown;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.trend-list li {
+    line-height: 2.0;
+}
