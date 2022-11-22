@@ -30,3 +30,12 @@ caption-side: 표의 제목의 위치를 결정하는 속성
 border: 표의 테두리를 결정
  -> table 태그에 부여하는 border는 가장 바깥 테두리만 만들어 줌
  -> 내부 셀들에 테두리를 부여하기 위해서는 th와 td에 border 속성을 주어야 함
+
+border-collapse: 테두리와 테두리 사이 공간을 제거
+-> border-collapse: collapse; 제거
+
+vs
+
+border-spacing: 테두리와 테두리 사이 공간을 줌
+
+border-spacing: 0 ~= border-collapse: collapse;
