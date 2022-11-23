@@ -1,0 +1,60 @@
+div, span
+div, p, hn들 등: 한 줄 짜리 박스 -> 블록 레벨 요소
+span, img, b, i 등: 글씨만큼만 공간을 차지한다 -> 인라인 레벨 요소
+-> 박스 모델
+
+박스 모델의 구조
+컨텐츠 - 패딩 - 테두리 - 마진
+contents - padding - border - margin
+** 테두리도 공간을 차지하고 있음
+
+박스 모델 스타일
+padding, margin, border
+
+padding-left, right, top, bottom
+-> 패딩을 좌, 우, 상, 하 위치에 설정
+margin-left, right, top, bottom
+-> 마진을 " 설정
+
+인라인 요소는 박스 모델 중 공간 설정에 대한 스타일을 줄 수 없음
+
+display -> 기존에 있던 인라인/블록 요소들의 설정을 바꿔줌
+원래 인라인 요소였던 span을 블록으로 바꿔주는게 display: block; -> 블록 요소로 바꿔줌
+display: inline-block; -> 인라인인데 블록 요소의 스타일을 사용할 수 있게끔 설정
+
+box-sizing 속성
+- content-box 가 기본 값: 컨텐츠 영역에 대한 너비가 설정된 값이다
+- border-box: 컨텐츠+테두리 영역에 대한 너비가 설정된 값이다
+
++padding 값을 추가했을 때 어떻게 되는가
+- content-box: content가 px 값을 다 먹음
+- border-box: border+padding+content가 부여한 값을 가진다 (border, padding을 공간을 먼저 주고, content가 남은 공간을 가진다)
+
+box-shadow: 박스에 그림자를 주는 설정
+가로거리, 세로거리, 흐림정도, 번짐정도, 색상, inset
+- 흐림: 진하기의 차이 (기본값 0 ~~~)
+- 번짐: 크기의 차이 (기본값 0, -, +)
+가로, 세로, 흐림, 번짐
+가로, 세로, 흐림, 번짐, 색상
+
+
+박스 테두리 설정
+border 크기, border 타입, border 색상
+크기: border-width
+타입: border-style
+색상: border-color
+속성으로 따로 지정할 수 있음
+
+-> border 상하좌우를 따로따로 지정할 수 있음
+순서가 위에서부터 시계방항
+
+border-left, right, top, bottom
+
+border-style 속성
+기본 값으로는 border가 없는것이 기본값 (none)
+- hidden: border가 있는데 없는 척
+   (나중에 자바스크립트를 배울 때)
+
+border-radius: 박스의 꼭짓점을 둥글게 만들기
+-> px 방식 : 고정 값
+-> % 방식 : 비율 (가로, 세로의 길이가 다르면 둥근 비율도 달라짐)
