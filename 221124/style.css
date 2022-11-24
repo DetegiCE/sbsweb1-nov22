@@ -1,0 +1,37 @@
+section {
+    border: 1px dotted gray;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.section1 {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.section3 {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.recipe {
+    list-style-type: decimal;
+}
+
+.price {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.price th, .price td {
+    border: 1px solid gray;
+    padding: 10px;
+}

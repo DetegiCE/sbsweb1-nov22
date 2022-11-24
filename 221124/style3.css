@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 960px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+header {
+    background-color: bisque;
+    width: 100%;
+    height: 150px;
+}
+
+aside {
+    background-color: coral;
+    width: 360px;
+    height: 500px;
+    float: left;
+}
+
+#contents {
+    background-color: darkkhaki;
+    width: 600px;
+    height: 500px;
+    float: left;
+}
+
+footer {
+    background-color: fuchsia;
+    clear: left;
+    width: 100%;
+    height: 150px;
+}

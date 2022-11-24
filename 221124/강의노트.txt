@@ -1,0 +1,29 @@
+display를 이용한 레이아웃 만들기
+-2단, 3단
+
+display
+- block : 한 줄 전체를 차지하는 속성
+- inline : 자기 컨텐츠 크기 만큼한 자리차지하는 속성 (공간 설정 속성 (padding, margin) 사용 X)
+- inline-block : inline (자기 크기 만큼만) + block (공간 설정 속성 사용 가능)
+
+<img>와 <p>가 있을 때, img 태그는 인라인 요소이고, p태그는 블록 요소기 때문에 img와 p태그가 서로 다른 줄에 나오게 됨
+-> p태그에 display: inline을 부여하게 되면, 둘 다 인라인 요소가 되기 때문에 양옆에 붙어서 한 줄로 나오게 됨
+
+float: 떠 있다 -> 요소를 떠있게 만들어주는 속성
+- 다음에 오는 요소들에게 나의 속성(display)이 영향이 가지 않게끔
+float: left -> float: left 속성을 가진 요소들을 왼쪽 방향으로 쌓는다
+float: right -> "" 오른쪽 방향으로 쌓는다
+
+float: left를 취소하지 않고 계속 놔두면 그 다음 요소들도 왼쪽에 붙으려고 함
+-> float: left를 취소하기 위해서는 clear: left;를 써주어야 함
+
+(float: right였으면 clear: right;)
+
+float: left, right 섞일 수 있음 -> clear: both;
+
+2단 레이아웃
+상단 - header
+가운데 - main
+ 좌측 - aside
+ 우측 - div
+하단 - footer
