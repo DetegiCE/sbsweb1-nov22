@@ -21,9 +21,18 @@ float: left를 취소하지 않고 계속 놔두면 그 다음 요소들도 왼�
 
 float: left, right 섞일 수 있음 -> clear: both;
 
+
 2단 레이아웃
+
+wrap, container -> 최상단 취급
 상단 - header
 가운데 - main
  좌측 - aside
  우측 - div
 하단 - footer
+
+최상단인 wrap을 가운데로 옮기기 위해서는 body 태그에 대해서 가운데로 위치시켜야 함
+-> margin을 이용해서 조절
+  -> 상하 margin은 0, 좌우 margin auto
+       (auto = 여백 계산해서 자동으로 가운데 맞춤)
+margin 또는 padding 값이 값이 2개라면 각각 상하/좌우
