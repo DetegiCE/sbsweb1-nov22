@@ -66,3 +66,17 @@ radial-gradient
    - closest-corner (가장 가까운 꼭짓점)
    - closest-side (가장 가까운 변)
    - farthest-side (가장 먼 변)
+
+반복 되는 그라데이션 (패턴)
+repeating-linear-gradient
+repeating-radial-gradient
+반복 주기가 필수 -> px, % 무관
+* 주기 지정시에는 콤마(,) 안 씀
+
+동일 색으로 채우고 싶다면
+색상1, 색상1 범위A, 색상2 범위A, 색상2 범위B
+
+
+프랑스 국기
+방글라데시 국기
+미국 국기
