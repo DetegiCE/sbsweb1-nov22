@@ -1,0 +1,40 @@
+프랑스 국기
+
+width 300px
+height 200px
+#051440 -> 0~100
+#FFF -> 100~200
+#EC1920 -> 200~300
+
+방글라데시 국기
+
+width 250px
+height 150px
+
+원은 #F42A41
+배경 #006A4E
+
+- 기본 (farthest-corner) 으로 하나
+- 위치 (closest-side) 이용해서 하나
+- 위치 (farthest-side) 이용해서 하나
+
+미국 국기
+width 190px
+height 100px
+
+줄 하나 당 7.69px -> 15.38px
+파란색 부분의 height: 53.83px, width: 76px
+파란색: #002664
+빨간색: #BF0A30
+흰색: #FFF
+
+div 좌우 
+
+트리니다드 토바고
+
+width 200px
+height 120px
+
+빨간 #DA1A35
+#FFF, #000
+40deg
