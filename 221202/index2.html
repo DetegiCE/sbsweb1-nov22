@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 720px;
+            margin: 0 auto;
+        }
+        .navi {
+            width: 720px;
+            height: 60px;
+            border-bottom: 3px solid black;
+        }
+        .navi ul {
+            list-style: none;
+        }
+        .navi ul li {
+            float: left;
+            width: 140px;
+            padding: 10px;
+        }
+        .navi a:link, .navi a:visited {
+            display: block;
+            font-size: 14px;
+            color: black;
+            padding: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navi a:hover, .navi a:focus {
+            background-color: #333;
+            color: white;
+        }
+        .navi a:active {
+            background-color: crimson;
+        }
+        .contents {
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        #intro:target {
+            background-color: darkcyan;
+            color: white;
+        }
+        #product:target {
+            background-color: chartreuse;
+        }
+        #board:target {
+            background-color: yellowgreen;
+        }
+        #contact {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+        }
+        #contact fieldset {
+            border: 1px solid #CCC;
+            margin-bottom: 30px;
+        }
+        #contact ul {
+            list-style: none;
+        }
+        #contact ul li {
+            line-height: 30px;
+            padding: 5px 10px;
+        }
+        #contact input:checked + label {
+            color: red;
+            font-weight: bold;
+        }
+        #contact input:not([type=radio]) {
+            border: 1px solid #CCC;
+            border-radius: 3px;
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <nav class="navi">
+            <ul>
+                <li><a href="#intro">회사 소개</a></li>
+                <li><a href="#product">제품 소개</a></li>
+                <li><a href="#board">게시판</a></li>
+                <li><a href="#path">오시는 길</a></li>
+            </ul>
+        </nav>
+        <div id="intro" class="contents">
+            <h2>회사 소개</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            </p>
+        </div>
+        <div id="product" class="contents">
+            <h2>제품 소개</h2>
+            <p>
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div id="board" class="contents">
+            <h2>게시판</h2>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+            </p>
+        </div>
+        <form id="contact">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="username">이름</label>
+                        <input type="text" id="username" name="username" required>
+                    </li>
+                    <li>
+                        <label for="userphone">연락처</label>
+                        <input type="tel" id="userphone" name="userphone" required>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>문의 선택</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="ask" id="ask_p">
+                        <label for="ask_p">제품 문의</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="ask" id="ask_c">
+                        <label for="ask_c">일반 문의</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">제출</button>
+        </form>
+    </div>
+</body>
+</html>
