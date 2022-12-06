@@ -1,0 +1,23 @@
+트랜지션 (transition): 전환 -> 스타일 속성을 바꾸는 것
+
+transition-property: 전환 속성 결정해주는 속성
+-> all (모든 속성을 전환 시킨다), none (속성을 전환하지 않겠다), 속성 이름 (특정 속성만 전환시킨다)
+
+transition-duration: 전환 시간을 결정해주는 속성 (초, 밀리초 단위 설정)
+-> 1s, 2s, 0.5s, 500ms 등등 숫자와 s, ms
+
+각 속성별로 전환 시간을 다르게 하고 싶다면, property와 duration을 따로 따로 작성
+
+transition-timing-function: 전환하는 속도 곡선을 지정해줄 수 있음
+- ease (기본 값): 빨라졌다가 느려지는 효과
+- ease-in: 점점 빨리짐
+- ease-out: 점점 느려짐
+- ease-in-out: ease와 비슷
+- linear: 전부 같은 속도
+- cubic-bezier: 점들의 위치를 이용해서 곡선에 대한 함수를 만들어내는 함수
+cubic-bezier(x1, y1, x2, y2) -> (x1, y1) 좌표와 (x2, y2) 좌표를 이용해 곡선을 결정 지음. 이때 좌표들은 0 이상 1 이하의 숫자
+
+transition-delay: 지정 시간만큼 기다렸다가 전환이 시작됨 -> 초, 밀리 초 단위
+
+transition 속성들을 한 번에 표기
+transition: <property> <duration> <timing-function> <delay>
