@@ -1,0 +1,29 @@
+animation + @keyframes
+@keyframes -> 시간 지점을 지정해서 해당 시간에 얼마나 애니메이션이 진척이 될지를 작성 및 정의
+@keyframes 애니메이션이름 {
+    선택자(시간) {
+        스타일
+    }
+}
+-> 시간 부분에는 진척도 (%) 로 표현
+시작: 0%(from), 중간: 50%, 끝: 100%(to)
+
+animation-name -> @keyframes 로 정의한 애니메이션의 이름을 넣음
+animation-duration -> 위 애니메이션이 몇 초 동안 지속이 되는가
+
+animation-direction -> 애니메이션의 실행 방향을 설정할 수 있음
+- normal(기본 값): from에서 to 방향으로 진행
+- reverse: to에서 from 방향으로 진행
+- alternate(교대하다): 홀수번째는 from->to, 짝수번째는 to->from
+- alternate-reverse: 홀수번째는 to->from, 짝수번째는 from->to
+
+animation-iteration-count -> 애니메이션이 몇 번 실행될지를 설정
+- 숫자 (1이 기본 값)
+- infinite (무한 반복)
+
+animation-timing-function -> 애니메이션 실행 속도에 대한 곡선을 지정해주는 함수
+- ease, ease-in, ease-out, ease-in-out, linear, cubic-bezier(숫자)
+
+animation-delay: 딜레이 시간
+
+animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction>

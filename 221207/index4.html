@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .wrap {
+            width: 125px;
+            height: 125px;
+            animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) infinite alternate;
+            margin: 100px auto;
+        }
+        .circle {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            mix-blend-mode: screen;
+            position: absolute;
+        }
+        .circle:nth-child(odd) {
+            background-color: #61BEA2;
+        }
+        .circle:nth-child(even) {
+            background-color: #529CA0;
+        }
+        .circle:nth-child(1) {
+            animation: circle-1 4s ease infinite alternate;
+        }
+        .circle:nth-child(2) {
+            animation: circle-2 4s ease infinite alternate;
+        }
+        .circle:nth-child(3) {
+            animation: circle-3 4s ease infinite alternate;
+        }
+        .circle:nth-child(4) {
+            animation: circle-4 4s ease infinite alternate;
+        }
+        .circle:nth-child(5) {
+            animation: circle-5 4s ease infinite alternate;
+        }
+        .circle:nth-child(6) {
+            animation: circle-6 4s ease infinite alternate;
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(0.15) rotate(180deg);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+        @keyframes circle-1 {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(-35px, -50px);
+            }
+        }
+        @keyframes circle-2 {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(35px, 50px);
+            }
+        }
+        @keyframes circle-3 {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(-60px, 0px);
+            }
+        }
+        @keyframes circle-4 {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(60px, 0px);
+            }
+        }
+        @keyframes circle-5 {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(-35px, 50px);
+            }
+        }
+        @keyframes circle-6 {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(35px, -50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
