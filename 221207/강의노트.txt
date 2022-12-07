@@ -27,3 +27,8 @@ animation-timing-function -> 애니메이션 실행 속도에 대한 곡선을 �
 animation-delay: 딜레이 시간
 
 animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction>
+
+
+
+관점 perspective (POV : perspective of view) -> 3d 적으로 앞으로 튀어나오게 설정해주는 값 (px 단위 설정)
+perspective: 120px;
